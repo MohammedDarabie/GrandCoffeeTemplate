@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-container {
+    @apply container mx-auto w-[90%] md:w-[80%] lg:w-[60%];
+  }
+
+  .button {
+    @apply px-6 md:px-10 py-2 md:py-3 bg-Zinc text-white font-bold hover:opacity-50;
+  }
+
+  .h1text {
+    @apply text-3xl md:text-4xl lg:text-6xl  text-center;
+  }
+
+  .imgs {
+    @apply w-[600px] h-[400px] md:h-[300px] md:w-[500px];
+  }
+}
+
+.landing {
+  background-image: url("../images/banner-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services {
+  background-image: url("../images/services-bg.png");
+  background-size: contain;
+}
+
+.testimonial {
+}
+
+.testcontainer {
+}
+
+@media (max-width: 478px) {
+  .testimonial {
+    position: relative;
+    border-left: 1px solid black;
+    padding: 8px;
+  }
+
+  .testcontainer {
+    position: relative;
+  }
+  .testcontainer::before {
+    position: absolute;
+    content: "";
+    color: black;
+    width: 25%;
+    height: 2px;
+    top: 0;
+  }
+}
+
+.contactUs {
+  background-image: url("../images/img-9.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.map {
+    background-image: url('../images/Map.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
